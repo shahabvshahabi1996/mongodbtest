@@ -1,5 +1,7 @@
+const userController = require('./controller/userController');
+
 module.exports = (app) => {
-    app.route('/').get((req,res)=>{
-        res.send('hello world!');
-    })
+    app.route('/find/all/user').get(
+        userController.findUsers
+    )
 }
