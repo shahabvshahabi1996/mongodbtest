@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ type: 'application/json' }));
 
 routes(app);
-
 const port = process.env.PORT || 3000;
 app.listen(port , () => {
     console.log(`listening to the magic port : ${port}\n`);
